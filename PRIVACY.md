@@ -31,7 +31,7 @@ We do not operate a server that receives this learning data. Deleting the app no
 
 - Your name, email address, phone number or mailing address inside the app.
 - The individual words you study or your per-card progress.
-- Your precise location, contacts, photos, camera or microphone data.
+- Your precise GPS location, contacts, photos, camera or microphone data.
 - Advertising identifiers (IDFA or Android Advertising ID).
 - Your payment card details.
 
@@ -43,6 +43,8 @@ We use **PostHog** (European Union hosting) to understand how the app is used an
 
 - **Events:** app lifecycle, onboarding completed, learning goal and starting level, first rating, lesson completed, daily limit progress, verb practice results, paywall views, and purchase, cancellation and restore outcomes.
 - **Technical data:** a random anonymous identifier created by the app, app version, build type, platform, device model, operating system, language, and whether you are on the free or Pro plan.
+
+- **Approximate location:** PostHog uses your IP address to estimate your country, region, city, postal area, time zone and approximate coordinates. The app does not request device location, and PostHog is configured not to store the IP address with analytics events.
 
 Session replay is turned off.
 
